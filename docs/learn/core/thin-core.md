@@ -1,34 +1,12 @@
-# AllJoyn&trade; Thin Core
+# AllJoyn&trade; 精简内核
 
-## Overview
+## 概览
 
-AllJoyn is an open-source software system that provides an
-environment for distributed applications running across different
-device classes, with an emphasis on mobility, security, and
-dynamic configuration. AllJoyn is "platform-neutral", meaning
-it was designed to be as independent as possible of the specifics
-of the operating system, hardware, and software of the device
-on which it is running.
+AllJoyn 是一套开源软件系统，它为可以夸不同类型设备运行的分布式应用提供运行平台，并且强调移动、安全和动态可配置的特性。AllJoyn是“平台不依赖”的，这意味着它在设计之时就尽量做到不依赖与特定的操作系统、硬件或硬件上运行的软件。
 
-Components of the AllJoyn Standard Core Library (AJSCL) are
-designed to run on Microsoft Windows, Linux, Android, iOS,
-OS X, and OpenWRT. A common characteristic of all of these
-software systems is that they run on general-purpose computers.
-General purpose computers usually have significant amounts of
-memory, available energy, and computing power, along with
-significant operating systems that support multiple processes
-and multiple threads with multiple standard language environments.
+AllJoyn的标准内核库(AJSCL)中的各子模块设计是考虑了在Microsoft Windows、Linux、Android、iOS、OS X、OpenWRT下以及作为互联网浏览器的整合插件的方式使用的要求。这些软件系统的一个共有的特性是它们都运行于通用计算机之上。通用计算机通常拥有可观数量的存储能力，有充足的电力、计算能力以及由此带来的能支持多进程、多线程和多语言环境的操作系统。
 
-An embedded system, on the other hand, is one designed to
-provide specific functionality running on a microcontroller
-embedded within a larger device. Since an embedded system need
-only perform a specific function or a small number of functions,
-engineers are free to optimize them to reduce the size and cost
-of the product, often by limiting memory size, processor speed,
-available power, peripherals, user interfaces, or all of the
-above. AllJoyn Thin Core Library (AJTCL) is designed to bring
-the benefits of the AllJoyn distributed programming environment
-to embedded systems.
+与此不同，嵌入式系统运行于嵌入在一个大型设备上的微处理器当中以提供特定的功能。由于嵌入式系统只需要执行特定的任务或一些有限数量的功能，工程师可以优化这些系统以便能在具有更小的存储空间、更有限的处理器速度、更省电、更少的外设和用户接口等的硬件平台上运行来减小产品的尺寸与价格。AllJoyn Thin Core Library（AJTCL）就是以将AllJoyn分布式编程环境的优势应用于嵌入式系统为目标应运而生的。
 
 Since the operating environment in which an AJTCL will run may
 be very constrained, an AllJoyn component running on such systems
